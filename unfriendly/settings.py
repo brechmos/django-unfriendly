@@ -6,7 +6,7 @@ from django.conf import settings
 #
 # UNFRIENDLY_ENABLE or disable
 #
-UNFRIENDLY_ENABLE=True
+UNFRIENDLY_ENABLE=getattr(settings, 'UNFRIENDLY_ENABLE', True )
 
 #
 # UNFRIENDLY_SECRET is used for encryption/decryption
